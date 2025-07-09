@@ -27,6 +27,22 @@ public class SinglyLinkedlist {
 		System.out.println("null");
 		
 	}
+    
+    public void addfirst(int data) {
+    	Node newnode = new Node(data);
+    	head.next=newnode;
+    	head=newnode;
+    }
+    
+    public void addatposition(int data,int pos) {
+    	Node newnode=new Node(10);
+    	Node temp=head;
+    	for(int i=0; i<pos-1 && temp.next!=null;i++) {
+    		temp=temp.next;
+    	}
+    	newnode.next=temp.next;
+    	temp.next=newnode;
+    }
     public static void main(String[] args) {
 		SinglyLinkedlist list=new SinglyLinkedlist();
 		list.insert(10);
