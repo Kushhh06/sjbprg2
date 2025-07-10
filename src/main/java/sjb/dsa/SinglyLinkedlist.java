@@ -51,5 +51,6 @@ public class SinglyLinkedlist {
         list.addfirst(8);
         list.addatposition(45, 2);
         list.display();
+    
     }
 }
