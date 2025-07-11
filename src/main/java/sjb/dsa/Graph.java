@@ -29,7 +29,7 @@ public static void main(String[] args) {
 	Graph g=new Graph(5);
 	g.edge(0, 1);
 	g.edge(3, 2);
-	g.edge(2, 4);
+	g.edge(3, 4);
 	g.printgr();
 }
 }
